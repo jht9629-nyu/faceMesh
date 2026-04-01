@@ -1,0 +1,67 @@
+// !!@ Not used
+// example needed for fstorage_render
+async function update_last_photo() {
+  //
+  console.log('update_last_photo photo_count', my.photo_list.length);
+
+  if (!my.photo_list.length) return;
+  if (!my.imgLayer) {
+    my.imgLayer = createGraphics(width, height);
+  }
+
+  startLoader();
+
+  let index = my.photo_list.length - 1;
+  let entry = my.photo_list[index];
+  let path = photo_path_entry(entry);
+  try {
+    let url = await fstorage_download_url({ path });
+    await fstoreage_render({ url, layer: my.imgLayer });
+  } catch (err) {
+    console.log('photo_list_update err', err);
+  }
+
+  stopLoader();
+}
+
+// my.imgLayer = createGraphics(my.width, my.height);
+
+// function photo_name(index) {
+//   return index.toString().padStart(4, '0') + my.imageExt;
+// }
+
+// !!@ Not used
+function set_photo_list(newList) {
+  console.log('set_photo_list newList', newList);
+  // console.log('set_photo_list photo_list', my.photo_list);
+  let n = newList.length;
+  let diff = n != my.photo_list.length || my.photo_list[n - 1].index != newList[n - 1].index;
+  my.photo_list = newList;
+  // !!@ diff update_last_photo
+  // if (diff) {
+  //   update_last_photo();
+  //   if (n) {
+  //     // console.log('set_photo_list newList[n - 1].index', newList[n - 1].index);
+  //   }
+  // }
+  // console.log('set_photo_list diff', diff);
+}
+
+// !!@ Not used
+async function photo_list_add(entry) {
+  let newList = my.photo_list.concat(entry);
+  if (newList.length > my.photo_max) {
+    await photo_list_trim(newList);
+  }
+  // Change to photo_list send to cloud
+  dbase_update_item({ photo_list: newList }, 'item');
+}
+
+// !!@ Not used
+async function photo_list_trim(newList) {
+  //
+  // remove the first entry in newList
+  //
+  let first = newList.shift();
+  await photo_list_remove_entry(first);
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      /* Center the loader */
+      #id_loader {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        z-index: 1;
+        /* width: 120px; */
+        /* height: 120px; */
+        width: 50%;
+        height: 50%;
+        /* margin: -76px 0 0 -76px; */
+        margin: -33% 0 0 -33%;
+        /* border: 16px solid #f3f3f3; */
+        border-radius: 50%;
+        border-top: 64px solid #ff0000;
+        border-bottom: 64px solid #00ff00;
+        border-left: 64px solid #dacb27;
+        border-right: 64px solid #000000;
+        /* -webkit-animation: spin 2s linear infinite; */
+        animation: spin 2s linear infinite;
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      /* Add animation to "page content" */
+      .animate-bottom {
+        position: relative;
+        -webkit-animation-name: animatebottom;
+        -webkit-animation-duration: 1s;
+        animation-name: animatebottom;
+        animation-duration: 1s;
+      }
+
+      @keyframes animatebottom {
+        from {
+          bottom: -100px;
+          opacity: 0;
+        }
+        to {
+          bottom: 0;
+          opacity: 1;
+        }
+      }
+
+      #id_myDiv {
+        /* display: none; */
+        text-align: center;
+      }
+    </style>
+  </head>
+  <!-- <body onload="myFunction()" style="margin: 0"> -->
+  <body style="margin: 0">
+    <!-- <div id="id_loader" style="display: none"></div> -->
+    <div id="id_loader"></div>
+
+    <button type="button" onclick="startLoader()">start</button>
+    <button type="button" onclick="stopLoader()">stop</button>
+
+    <div id="id_myDiv">
+      <!-- <div id="id_myDiv" class="animate-bottom"> -->
+      <h2>Tada!</h2>
+      <p>Some text in my newly loaded page..</p>
+    </div>
+
+    <script>
+      function startLoader() {
+        console.log('startLoader');
+        id_loader.style.display = 'block';
+        id_myDiv.classList.remove('animate-bottom');
+      }
+      function stopLoader() {
+        console.log('stopLoader');
+        id_loader.style.display = 'none';
+        id_myDiv.classList.add('animate-bottom');
+      }
+    </script>
+  </body>
+</html>
+
+<!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_loader5 -->

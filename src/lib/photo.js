@@ -48,7 +48,7 @@ async function photo_list_remove_entry(entry) {
 }
 
 function photo_list_update() {
-  console.log('photo_list_update photo_list_update_pending = 1', my.photo_list_update_pending);
+  console.log('photo_list_update photo_list_update_pending = 1', my.photo_list_update_enabled);
   scroller_pause();
   my.photo_list_update_pending = 1;
 }
@@ -121,7 +121,9 @@ function photo_list_prune() {
 }
 
 async function add_action() {
-  console.log('add_action ');
+  console.log('add_action my.photo_list_update_enabled', my.photo_list_update_enabled);
+
+  my.photo_list_update_enabled = 1;
 
   add_action_startLoader();
 

@@ -48,13 +48,14 @@ async function photo_list_remove_entry(entry) {
 }
 
 function photo_list_update() {
-  console.log('photo_list_update');
+  console.log('photo_list_update photo_list_update_pending = 1', my.photo_list_update_pending);
   scroller_pause();
   my.photo_list_update_pending = 1;
 }
 
 function photo_list_update_poll() {
-  if (my.photo_list_update_pending) {
+  if (my.photo_list_update_pending && my.photo_list_update_enabled) {
+    console.log('photo_list_update_poll photo_list_update_pending = 0');
     my.photo_list_update_pending = 0;
     photo_list_render();
   }

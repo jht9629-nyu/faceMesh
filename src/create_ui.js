@@ -9,6 +9,9 @@ function create_ui() {
   let ver = ui_span(0, my.mo_group + my.version);
   ver.elt.style.backgroundColor = 'white';
 
+  my.loadBtn = ui_createButton('Load');
+  my.loadBtn.mousePressed(load_action_ui);
+
   my.showBtn = ui_createButton('Show');
   my.showBtn.mousePressed(show_action_ui);
 
@@ -34,9 +37,6 @@ function create_ui() {
 
     my.addBtn = ui_createButton('Add');
     my.addBtn.mousePressed(add_action);
-
-    // my.takeBtn = ui_createButton('Take');
-    // my.takeBtn.mousePressed(take_action);
 
     my.meshBtn = ui_createButton('Mesh');
     my.meshBtn.mousePressed(mesh_action);
@@ -65,6 +65,11 @@ function create_ui() {
   my.gallery_div = ui_div_empty('id_gallery');
   // my.gallery_div.elt.style.margin = '0px 40px';
   my.gallery_div.elt.style.margin = `0px ${my.gallery_margin}`;
+}
+
+function load_action_ui() {
+  console.log('load_action_ui', my.photo_list_update_enabled);
+  my.photo_list_update_enabled = 1;
 }
 
 function img_remove_all() {

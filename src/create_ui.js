@@ -4,7 +4,11 @@ function create_ui() {
   ui_begin();
 
   my.ui_container = createDiv('').id('id_dash_buttons');
-  my.ui_container.style('position: fixed; z-index: 100;');
+  // my.ui_container.style('position: fixed; z-index: 100;');
+  if (!my.showQRCode) {
+    // Position buttons at bottom of screen
+    my.ui_container.style('position: fixed; z-index: 1999; bottom: 0; left: 0');
+  }
 
   let ver = ui_span(0, my.mo_group + my.version);
   ver.elt.style.backgroundColor = 'white';

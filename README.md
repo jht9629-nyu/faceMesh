@@ -1,7 +1,7 @@
 # [faceMesh](https://github.com/jht9629-nyu/faceMesh.git)
 
-- [entry ?v=07](src/index.html?v=07)
-- [entry s1 ?v=07](src/index.html?v=07&group=s1)
+- [entry ?v=08](src/index.html?v=08)
+- [entry s1 ?v=08](src/index.html?v=08&group=s1)
 
 ## TODO
 
@@ -15,6 +15,36 @@
 ## Notes
 
 ```
+2026-04-02 01:17:50
+
+// ?v=08
+  if (!my.showQRCode) {
+    // Position buttons at bottom of screen
+    my.ui_container.style('position: fixed; z-index: 1999; bottom: 0; left: 0');
+  }
+
+>> using claude in vscode
+>> prompt:
+In create_ui.js my.ui_container.style is used to possition the element. adjust to position at the bottom of the screen
+  my.ui_container.style('position: fixed; bottom: 0; left: 0; z-index: 100;');
+>> fails
+>> div does not appear
+  my.ui_container.elt.style.cssText = 'position: fixed; bottom: 0; left: 0; width: 100%; z-index: 100;';
+
+  // position at bottom of screen
+  // my.ui_container.style('position: fixed; bottom: 1000; left: 0; z-index: 100;');
+  // {
+  //   let elt = my.ui_container.elt;
+  //   elt.style.position = 'fixed';
+  //   elt.style.bottom = '0';
+  //   elt.style.left = '0';
+  //   // moLib my.footerElement.style.zIndex = 999;
+  //   elt.style.zIndex = 1999;
+  //   elt.style.width = '100%';
+  //   // elt.style.height = my.footerHeight; // '192px';
+  //   // elt.style.backgroundColor = 'black';
+  //   // elt.style.color = 'white';
+  // }
 
 2026-04-01 23:51:13
 >> using claude in vscode to fix:

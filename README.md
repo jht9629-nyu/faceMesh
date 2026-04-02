@@ -15,6 +15,10 @@
 ## Notes
 
 ```
+2026-04-02 12:34:29
+
+>> remove 1 not working correctly
+
 2026-04-02 01:17:50
 
 // ?v=11
@@ -85,3 +89,7 @@ photo_list_update err FirebaseError: Firebase Storage: Object 'm0-@r-@w-/mo-face
 http://127.0.0.1:5503/src/index.html?group=s1&show_remove=1
 
 ```
+
+## Store
+
+- [console.firebase](https://console.firebase.google.com/u/0/project/molab-485f5/database/molab-485f5-default-rtdb/data/~2Fm0-@r-@w-~2Fmo-facemesh~2Fm4-facemesh)

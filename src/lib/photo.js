@@ -56,40 +56,50 @@ function photo_list_update() {
 function photo_list_update_poll() {
   if (my.photo_list_update_pending && my.photo_list_update_enabled) {
     console.log('photo_list_update_poll photo_list_update_pending = 0');
-    my.photo_list_update_pending = 0;
     photo_list_render();
   }
 }
 
 async function photo_list_render() {
-  // console.log('photo_list_update my.photo_list', my.photo_list);
+  console.log('photo_list_update my.photo_list_render_active', my.photo_list_render_active);
   // Create images from my.photo_store
   // showing most recent first
   //
+  my.photo_list_update_pending = 0;
+
+  my.photo_list_render_active = 1;
+
   let prepend = 1;
   let entries = Object.entries(my.photo_store);
-  let nlast = entries.length;
-  if (my.photo_list.length == 0) {
-    // Render list most recent first
-    console.log('photo_list_update prepend = 0 nlast', nlast);
+  let nnew = entries.length;
+  let nold = my.photo_list.length;
+  console.log('photo_list_render nold', nold, 'nnew', nnew);
+  if (nold == 0) {
+    // Render list most recent first by appending
+    console.log('photo_list_render prepend = 0 nnew', nnew);
     prepend = 0;
   }
-  my.photo_list = [];
-  let istart = nlast - my.photo_max;
+  let photo_list = [];
+  let istart = nnew - my.photo_max;
   if (istart < 0) istart = 0;
-  for (let i = istart; i < nlast; i++) {
+  for (let i = istart; i < nnew; i++) {
     let ent = entries[i];
     let key = ent[0];
     let photo = ent[1];
     photo.key = key;
-    my.photo_list.push(photo);
+    photo_list.push(photo);
   }
   if (!prepend) {
-    my.photo_list.reverse();
+    photo_list.reverse();
   }
   // console.log('photo_list_render my.photo_list', my.photo_list);
-  console.log('photo_list_render my.photo_list n', my.photo_list.length);
-  for (let entry of my.photo_list) {
+  console.log('photo_list_render photo_path_entry for n', photo_list.length);
+  for (let entry of photo_list) {
+    let present = locate_img_key(entry.key);
+    if (present) {
+      // console.log('photo_list_render present', entry.key);
+      continue;
+    }
     let path = photo_path_entry(entry);
     try {
       let url = await fstorage_download_url({ path });
@@ -106,6 +116,10 @@ async function photo_list_render() {
   }
 
   add_action_stopLoader();
+
+  my.photo_list = photo_list;
+  my.photo_list_render_active = 0;
+  console.log('photo_list_render exit\n');
 }
 
 function proto_prune_poll() {

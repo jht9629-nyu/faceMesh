@@ -1,10 +1,13 @@
 # [faceMesh](https://github.com/jht9629-nyu/faceMesh.git)
 
-- [entry ?v=04](src/index.html?v=04)
-- [entry s1 ?v=04](src/index.html?v=04&group=s1)
+- [entry ?v=05](src/index.html?v=05)
+- [entry s1 ?v=05](src/index.html?v=05&group=s1)
 
 ```
 
+locate_img_key
+
+my.photo_list_render_active
 
 my.photo_list_update_enabled
 
@@ -18,6 +21,14 @@ function showAll_action() {
 my.scrollerEnabled
 
   console.log('photo_list_render my.photo_list n', my.photo_list.length);
+
+
+```
+
+# TODO
+
+```
+[] take on device while images loading is not added correctly
 
 
 ```

@@ -86,6 +86,12 @@ function img_remove_all() {
   my.gallery_items = {};
 }
 
+// Return truthy if image key present
+function locate_img_key(key) {
+  if (!my.gallery_items) return false;
+  return my.gallery_items[key];
+}
+
 // Create image element for an index
 //  or return if already present
 //

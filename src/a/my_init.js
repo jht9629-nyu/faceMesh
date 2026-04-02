@@ -1,7 +1,7 @@
 //
 function my_init() {
   // updated to verify change on mobile
-  my.version = '?v=04';
+  my.version = '?v=05';
   my.appTitle = 'Facemesh';
   my.isRemote = 1;
   // show detailed log
@@ -24,6 +24,7 @@ function my_init() {
   // my.photo_max = 4;
   my.photo_list = [];
   my.photo_list_update_enabled = 1;
+  my.photo_list_render_active = 0;
 
   let scale = 0.5;
   // let scale = 1.0;

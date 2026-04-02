@@ -9,8 +9,8 @@ function create_ui() {
   let ver = ui_span(0, my.mo_group + my.version);
   ver.elt.style.backgroundColor = 'white';
 
-  my.loadBtn = ui_createButton('Load');
-  my.loadBtn.mousePressed(load_action_ui);
+  // my.loadBtn = ui_createButton('Load');
+  // my.loadBtn.mousePressed(load_action_ui);
 
   my.showBtn = ui_createButton('Show');
   my.showBtn.mousePressed(show_action_ui);
@@ -89,7 +89,7 @@ function img_remove_all() {
 // Create image element for an index
 //  or return if already present
 //
-function find_img(key) {
+function find_img(key, prepend) {
   let id = 'id_img_' + key;
   let img = select('#' + id);
   if (!img) {
@@ -104,7 +104,11 @@ function find_img(key) {
     span.child(img);
 
     // Add image as first child to see most recent first
-    my.gallery_div.elt.prepend(span.elt);
+    if (prepend) {
+      my.gallery_div.elt.prepend(span.elt);
+    } else {
+      my.gallery_div.elt.append(span.elt);
+    }
 
     let iwidth = my.thumbWidth;
     img.style('width: ' + iwidth + 'px;');

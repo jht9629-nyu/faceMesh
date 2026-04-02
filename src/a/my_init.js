@@ -23,6 +23,7 @@ function my_init() {
   my.photo_max = 512;
   // my.photo_max = 4;
   my.photo_list = [];
+  my.photo_list_update_enabled = 1;
 
   let scale = 0.5;
   // let scale = 1.0;

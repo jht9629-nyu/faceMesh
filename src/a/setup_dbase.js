@@ -29,7 +29,7 @@ function observe_photo_store() {
   dbase_app_observe({ observed_event }, 'photo_store');
   my.photo_store = {};
   function observed_event(event, key, item) {
-    console.log('observed_event ', event, key, item);
+    // console.log('photo_store observed_event ', event, key, item);
     switch (event) {
       case 'add':
       case 'change':

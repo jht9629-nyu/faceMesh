@@ -66,9 +66,15 @@ async function photo_list_render() {
   // Create images from my.photo_store
   // showing most recent first
   //
-  my.photo_list = [];
+  let prepend = 1;
   let entries = Object.entries(my.photo_store);
   let nlast = entries.length;
+  if (my.photo_list.length == 0) {
+    // Render list most recent first
+    console.log('photo_list_update prepend = 0 nlast', nlast);
+    prepend = 0;
+  }
+  my.photo_list = [];
   let istart = nlast - my.photo_max;
   if (istart < 0) istart = 0;
   for (let i = istart; i < nlast; i++) {
@@ -77,6 +83,9 @@ async function photo_list_render() {
     let photo = ent[1];
     photo.key = key;
     my.photo_list.push(photo);
+  }
+  if (!prepend) {
+    my.photo_list.reverse();
   }
   // console.log('photo_list_render my.photo_list', my.photo_list);
   console.log('photo_list_render my.photo_list n', my.photo_list.length);
@@ -92,7 +101,7 @@ async function photo_list_render() {
   function url_result(url, key) {
     // console.log('url_result index', index, 'url', url);
     // Images are prepended
-    let img = find_img(key);
+    let img = find_img(key, prepend);
     img.elt.src = url;
   }
 

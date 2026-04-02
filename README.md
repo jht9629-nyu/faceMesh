@@ -1,7 +1,7 @@
 # [faceMesh](https://github.com/jht9629-nyu/faceMesh.git)
 
-- [entry ?v=06](src/index.html?v=06)
-- [entry s1 ?v=06](src/index.html?v=06&group=s1)
+- [entry ?v=07](src/index.html?v=07)
+- [entry s1 ?v=07](src/index.html?v=07&group=s1)
 
 ## TODO
 

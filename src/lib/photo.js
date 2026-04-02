@@ -117,6 +117,10 @@ async function photo_list_render() {
 
   add_action_stopLoader();
 
+  // Correct photo_list order
+  if (!prepend) {
+    photo_list.reverse();
+  }
   my.photo_list = photo_list;
   my.photo_list_render_active = 0;
   console.log('photo_list_render exit\n');

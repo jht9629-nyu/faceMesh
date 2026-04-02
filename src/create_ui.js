@@ -4,8 +4,8 @@ function create_ui() {
   ui_begin();
 
   my.ui_container = createDiv('').id('id_dash_buttons');
-  // my.ui_container.style('position: fixed; z-index: 100;');
-  if (!my.showQRCode) {
+  my.ui_container.style('position: fixed; z-index: 100;');
+  if (!my.showQRCode()) {
     // Position buttons at bottom of screen
     my.ui_container.style('position: fixed; z-index: 1999; bottom: 0; left: 0');
   }
@@ -64,7 +64,7 @@ function create_ui() {
   let main_elt = document.querySelector('main');
   body_elt.insertBefore(main_elt, null);
 
-  // Gallery is below canvs
+  // Gallery is below canvas
   my.ui_container = null;
   my.gallery_div = ui_div_empty('id_gallery');
   // my.gallery_div.elt.style.margin = '0px 40px';

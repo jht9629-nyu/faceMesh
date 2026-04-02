@@ -1,7 +1,7 @@
 //
 function my_init() {
   // updated to verify change on mobile
-  my.version = '?v=08';
+  my.version = '?v=09';
   my.appTitle = 'Facemesh';
   my.isRemote = 1;
   // show detailed log
@@ -112,5 +112,6 @@ function window_resized() {
     my.thumbWidth = Math.floor(windowWidth) / perRow;
     my.gallery_margin = '20px';
   }
+  // my.gallery_margin = '0px';
   console.log('window_resized windowWidth', windowWidth, 'my.thumbWidth', my.thumbWidth);
 }

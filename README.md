@@ -1,7 +1,7 @@
 # [faceMesh](https://github.com/jht9629-nyu/faceMesh.git)
 
-- [entry ?v=08](src/index.html?v=08)
-- [entry s1 ?v=08](src/index.html?v=08&group=s1)
+- [entry ?v=09](src/index.html?v=09)
+- [entry s1 ?v=09](src/index.html?v=09&group=s1)
 
 ## TODO
 
@@ -17,7 +17,7 @@
 ```
 2026-04-02 01:17:50
 
-// ?v=08
+// ?v=09
   if (!my.showQRCode) {
     // Position buttons at bottom of screen
     my.ui_container.style('position: fixed; z-index: 1999; bottom: 0; left: 0');

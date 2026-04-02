@@ -55,7 +55,7 @@ function photo_list_update() {
 
 function photo_list_update_poll() {
   if (my.photo_list_update_pending && my.photo_list_update_enabled) {
-    console.log('photo_list_update_poll photo_list_update_pending = 0');
+    console.log('photo_list_update_poll photo_list_render');
     photo_list_render();
   }
 }

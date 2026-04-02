@@ -1,7 +1,7 @@
 # [faceMesh](https://github.com/jht9629-nyu/faceMesh.git)
 
-- [entry ?v=05](src/index.html?v=05)
-- [entry s1 ?v=05](src/index.html?v=05&group=s1)
+- [entry ?v=06](src/index.html?v=06)
+- [entry s1 ?v=06](src/index.html?v=06&group=s1)
 
 ## TODO
 
@@ -15,6 +15,22 @@
 ## Notes
 
 ```
+
+2026-04-01 23:51:13
+>> using claude in vscode to fix:
+>> prompt:
+function find_img create a span to hold image of with iwidth. a few pixel margin appears above the image. adjust the style to remove any margin or padding
+>> spacing still appears above the image
+    img.elt.style.cssText = 'width:' + iwidth + 'px; display:block; margin:0; padding:0; vertical-align:top;';
+    span.elt.style.cssText = 'display:inline-block; margin:0; padding:0; line-height:0; font-size:0;';
+>> spacing still appears
+  my.gallery_div.elt.style.fontSize = '0';
+  my.gallery_div.elt.style.lineHeight = '0';
+
+>> correct. style.cssText not needed.
+
+2026-04-01 23:58:06
+
 locate_img_key
 
 my.photo_list_render_active

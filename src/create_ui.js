@@ -65,6 +65,8 @@ function create_ui() {
   my.gallery_div = ui_div_empty('id_gallery');
   // my.gallery_div.elt.style.margin = '0px 40px';
   my.gallery_div.elt.style.margin = `0px ${my.gallery_margin}`;
+  my.gallery_div.elt.style.fontSize = '0';
+  my.gallery_div.elt.style.lineHeight = '0';
 }
 
 function load_action_ui() {

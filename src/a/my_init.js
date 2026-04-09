@@ -92,8 +92,14 @@ function my_init() {
     my.photo_max = Number.MAX_SAFE_INTEGER;
   }
   my.show_mesh = 1;
-  my.footerHeight = '288px';
-  my.qrCodeWidth = '25%';
+  if (windowWidth > windowHeight) {
+    my.footerHeight = '210px';
+    my.qrCodeWidth = '15%';
+  } else {
+    my.footerHeight = '288px';
+    my.qrCodeWidth = '25%';
+  }
+  console.log('my.qrCodeWidth', my.qrCodeWidth);
 
   window_resized();
 

@@ -94,7 +94,7 @@ function my_init() {
   my.show_mesh = 1;
   if (windowWidth > windowHeight) {
     my.footerHeight = '210px';
-    my.qrCodeWidth = '15%';
+    my.qrCodeWidth = '12%';
   } else {
     my.footerHeight = '288px';
     my.qrCodeWidth = '25%';

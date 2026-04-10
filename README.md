@@ -9,6 +9,9 @@
 
 ## ISSUES
 
+- later arriving device (eg. mobile) does not show recent capture
+  on device until page reload on device
+
 - https://github.com/ml5js/ml5-next-gen/issues/302
   - facemesh keypoints NOT aligned with video on mobile device
 

@@ -183,3 +183,11 @@ function received_gallery(data, opts) {
     // ui_init_update();
   }
 }
+
+window.scroller_init = scroller_init;
+window.scroller_update = scroller_update;
+window.scroller_pause = scroller_pause;
+window.scroller_resume = scroller_resume;
+window.scroller_isActive = scroller_isActive;
+window.scroller_isStalled = scroller_isStalled;
+window.scrollerEnabled_toggle = scrollerEnabled_toggle;

@@ -195,3 +195,9 @@ function mesh_action() {
 function fullScreen_action() {
   ui_toggleFullScreen();
 }
+
+window.create_ui = create_ui;
+window.show_action = show_action;
+window.hide_action = hide_action;
+window.find_img = find_img;
+window.locate_img_key = locate_img_key;

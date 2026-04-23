@@ -27,3 +27,5 @@ class PeriodTimer {
     return 0;
   }
 }
+
+window.PeriodTimer = PeriodTimer;

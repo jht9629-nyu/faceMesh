@@ -72,4 +72,4 @@ class eff_bestill {
     // console.log('buf_init', w, h);
   }
 }
-// window.eff_bestill = eff_bestill;
+window.eff_bestill = eff_bestill;

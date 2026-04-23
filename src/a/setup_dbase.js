@@ -69,3 +69,8 @@ function first_mesh_check() {
     stopLoader();
   }
 }
+
+window.setup_dbase = setup_dbase;
+window.first_mesh_check = first_mesh_check;
+window.add_action_startLoader = add_action_startLoader;
+window.add_action_stopLoader = add_action_stopLoader;

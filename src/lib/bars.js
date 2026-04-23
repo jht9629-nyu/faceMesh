@@ -69,3 +69,5 @@ class eff_bars {
 
 // https://editor.p5js.org/jht9629-nyu/sketches/2pxhnehBV
 // ims04-jht scroll color rate
+
+window.eff_bars = eff_bars;

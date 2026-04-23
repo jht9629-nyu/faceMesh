@@ -121,3 +121,5 @@ function window_resized() {
   // my.gallery_margin = '0px';
   console.log('window_resized windowWidth', windowWidth, 'my.thumbWidth', my.thumbWidth);
 }
+
+window.my_init = my_init;

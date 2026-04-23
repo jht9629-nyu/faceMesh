@@ -72,6 +72,10 @@ function overlayEyesMouthFace(face, source) {
 
 // image(img, dx, dy, dWidth, dHeight, sx, sy, [sWidth], [sHeight]
 
+window.video_init = video_init;
+window.overlayEyesMouth = overlayEyesMouth;
+window.overlayEyesMouthBars = overlayEyesMouthBars;
+
 // let capture = createCapture(VIDEO, function (stream)
 // try {
 // } catch (err) {

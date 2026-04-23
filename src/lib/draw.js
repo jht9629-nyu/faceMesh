@@ -135,3 +135,10 @@ function draw_line(lp, face) {
 function draw_face_mesh(face) {
   faceMesh_render(my, face.keypoints);
 }
+
+window.draw_face_mesh = draw_face_mesh;
+window.draw_mouth_shape = draw_mouth_shape;
+window.draw_lips_line = draw_lips_line;
+window.draw_eye_shape = draw_eye_shape;
+window.draw_eye_lines = draw_eye_lines;
+window.draw_shape_layer = draw_shape_layer;

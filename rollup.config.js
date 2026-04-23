@@ -1,9 +1,15 @@
+import terser from '@rollup/plugin-terser';
+
+const production = process.env.NODE_ENV === 'production';
+
 export default {
   input: 'src/main.js',
   output: {
     file: 'src/bundle.js',
     format: 'iife',
     name: 'app',
+    sourcemap: production,
+    plugins: production ? [terser()] : [],
   },
   treeshake: false,
   onwarn(warning, warn) {

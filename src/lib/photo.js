@@ -228,3 +228,11 @@ async function remove_all_action_confirmed() {
 
   // setTimeout(photo_list_prune, 2000);
 }
+
+window.add_action = add_action;
+window.take_action = take_action;
+window.remove_action = remove_action;
+window.remove_all_action = remove_all_action;
+window.photo_list_update = photo_list_update;
+window.photo_list_update_poll = photo_list_update_poll;
+window.proto_prune_poll = proto_prune_poll;

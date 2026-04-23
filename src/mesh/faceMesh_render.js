@@ -99,3 +99,5 @@ function faceMesh_render(my, keypoints) {
 
 // lips_in_top 13
 // lips_in_bot 14
+
+window.faceMesh_render = faceMesh_render;

@@ -18,6 +18,22 @@
 ## Notes
 
 ```
+2026-04-23 10:42:20
+Claude
+>> entry point for web app is src/index.html, convert to use rollup to bundle and import includes
+>> my_init is not defined
+>> add option to build minified for production with source map
+npm run build → 98KB readable bundle, no source map (dev)
+npm run build:prod → 56KB minified bundle.js + bundle.js.map alongside it (production)
+
+npm run build:prod
+jht2@Mac faceMesh % ls -la src/bundle.js
+-rw-r--r--@ 1 jht2  staff  56081 Apr 23 10:43 src/bundle.js
+
+npm run build
+jht2@Mac faceMesh % ls -la src/bundle.js
+-rw-r--r--@ 1 jht2  staff  98692 Apr 23 10:47 src/bundle.js
+
 2026-04-02 12:34:29
 
 >> remove 1 not working correctly

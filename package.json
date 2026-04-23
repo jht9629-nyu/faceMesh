@@ -4,9 +4,12 @@
   "type": "module",
   "scripts": {
     "build": "rollup -c",
-    "watch": "rollup -c --watch"
+    "build:prod": "NODE_ENV=production rollup -c",
+    "watch": "rollup -c --watch",
+    "preview": "npx serve src"
   },
   "devDependencies": {
+    "@rollup/plugin-terser": "^1.0.0",
     "rollup": "^4.0.0"
   }
 }

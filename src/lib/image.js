@@ -36,3 +36,5 @@ function image_copy_to(to, from) {
   to.copy(from, 0, 0, from.width, from.height, 0, 0, to.width, to.height);
 }
 // image.copy(fromImage, sx, sy, sw, sh, dx, dy, dw, dh)
+
+window.image_copy_to = image_copy_to;

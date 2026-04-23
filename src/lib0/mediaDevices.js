@@ -113,3 +113,7 @@ function create_capture_promise(mediaDev, options, resolve, reject) {
   capture.elt.muted = true;
   mediaDev.capture = capture;
 }
+
+window.mediaDevices_preflight = mediaDevices_preflight;
+window.mediaDevices_enum = mediaDevices_enum;
+window.mediaDevice_create_capture = mediaDevice_create_capture;

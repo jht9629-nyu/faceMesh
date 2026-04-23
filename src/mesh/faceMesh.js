@@ -58,3 +58,7 @@ function faceMesh_outputPtToInput(pt) {
   y = my.y0k + (y - my.y0) / my.ry;
   return { x, y };
 }
+
+window.faceMesh_init = faceMesh_init;
+window.faceMesh_inputPtToOutput = faceMesh_inputPtToOutput;
+window.faceMesh_outputPtToInput = faceMesh_outputPtToInput;

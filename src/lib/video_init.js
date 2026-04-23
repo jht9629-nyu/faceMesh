@@ -2,7 +2,7 @@
 
 // !!@ flipH=true does not preview correctly
 // unless capture is sized immediately
-let flipH = true;
+window.flipH = true;
 // let flipH = false;
 
 async function video_init() {

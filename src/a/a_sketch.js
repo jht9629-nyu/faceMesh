@@ -1,8 +1,8 @@
 // https://editor.p5js.org/jht9629-nyu/sketches/xxx
 // faceMesh v9 photo
 
-let my = {};
-let colorPalette = ['red', 'green', 'gold', 'black'];
+window.my = {};
+window.colorPalette = ['red', 'green', 'gold', 'black'];
 
 function setup() {
   // createCanvas(640, 480);
@@ -243,6 +243,9 @@ function add_action_unblock() {
   console.log('add_action_unblock add_action_timeoutid', my.add_action_timeoutid);
   my.add_action_timeoutid = 0;
 }
+
+window.setup = setup;
+window.draw = draw;
 
 // https://editor.p5js.org/ml5/sketches/lCurUW1TT
 // faceMesh-keypoints --ml5

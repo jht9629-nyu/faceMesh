@@ -12,7 +12,7 @@ export const MEDIAPIPE_FACE_MESH_CONNECTED_KEYPOINTS_PAIRS: PairArray = [
 // console.log('FACE_MESH_PAIRS');
 
 // const MEDIAPIPE_FACE_MESH_CONNECTED_KEYPOINTS_PAIRS = [
-const FACE_MESH_PAIRS = [
+window.FACE_MESH_PAIRS = [
   [127, 34],  [34, 139],  [139, 127], [11, 0],    [0, 37],    [37, 11],
   [232, 231], [231, 120], [120, 232], [72, 37],   [37, 39],   [39, 72],
   [128, 121], [121, 47],  [47, 128],  [232, 121], [121, 128], [128, 232],

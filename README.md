@@ -1,7 +1,7 @@
 # [faceMesh](https://github.com/jht9629-nyu/faceMesh.git)
 
-- [entry ?v=14](src/index.html?v=14)
-- [entry s1 ?v=14](src/index.html?v=14&group=s1)
+- [entry ?v=15](src/index.html?v=15)
+- [entry s1 ?v=15](src/index.html?v=15&group=s1)
 
 ## TODO
 
@@ -49,7 +49,7 @@ jht2@Mac faceMesh % ls -la dist/bundle.js
 
 2026-04-02 01:17:50
 
-// ?v=14
+// ?v=15
   if (!my.showQRCode()) {
     // Position buttons at bottom of screen
     my.ui_container.style('position: fixed; z-index: 1999; bottom: 0; left: 0');

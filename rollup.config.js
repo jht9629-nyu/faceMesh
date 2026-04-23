@@ -5,7 +5,7 @@ const production = process.env.NODE_ENV === 'production';
 export default {
   input: 'src/main.js',
   output: {
-    file: 'src/bundle.js',
+    file: 'dist/bundle.js',
     format: 'iife',
     name: 'app',
     sourcemap: production,

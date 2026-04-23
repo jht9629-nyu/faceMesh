@@ -34,6 +34,15 @@ npm run build
 jht2@Mac faceMesh % ls -la src/bundle.js
 -rw-r--r--@ 1 jht2  staff  98692 Apr 23 10:47 src/bundle.js
 
+>> adjust to put build output in dist directory
+Clean. npm run preview now serves from the project root so src/index.html is at http://localhost:3000/src/index.html and ../dist/bundle.js resolves correctly to http://localhost:3000/dist/bundle.js.
+
+-- need to use http://localhost:3000/src/
+-- http://localhost:3000/src --> can't find src/style.css
+
+jht2@Mac faceMesh % ls -la dist/bundle.js
+-rw-r--r--@ 1 jht2  staff  56081 Apr 23 11:03 dist/bundle.js
+
 2026-04-02 12:34:29
 
 >> remove 1 not working correctly

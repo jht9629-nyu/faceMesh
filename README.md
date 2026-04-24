@@ -3,14 +3,17 @@
 - [entry ?v=15](src/index.html?v=15)
 - [entry s1 ?v=15](src/index.html?v=15&group=s1)
 
-## TODO
+## Plan
 
-- [] take on device while images loading is not added correctly
+- [] Surface raw rgb values
+- [] deep link to image and allow sharing
 
 ## ISSUES
 
-- later arriving device (eg. mobile) does not show recent capture
+- [] later arriving device (eg. mobile) does not show recent capture
   on device until page reload on device
+
+- [] take on device while images loading is not added correctly
 
 - https://github.com/ml5js/ml5-next-gen/issues/302
   - facemesh keypoints NOT aligned with video on mobile device

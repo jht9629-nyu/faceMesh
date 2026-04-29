@@ -1,7 +1,7 @@
 //
 function my_init() {
   // updated to verify change on mobile
-  my.version = '?v=15';
+  my.version = '?v=16';
   my.appTitle = 'Facemesh';
   my.isRemote = 1;
   // show detailed log

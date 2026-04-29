@@ -1,7 +1,9 @@
 # [faceMesh](https://github.com/jht9629-nyu/faceMesh.git)
 
-- [entry ?v=15](src/index.html?v=15)
-- [entry s1 ?v=15](src/index.html?v=15&group=s1)
+- [entry ?v=16](src/index.html?v=16)
+- [entry s1 ?v=16](src/index.html?v=16&group=s1)
+
+- [entry qrcode?v=16](src/qrcode/index.html?v=16)
 
 ## Plan
 
@@ -17,6 +19,12 @@
 
 - https://github.com/ml5js/ml5-next-gen/issues/302
   - facemesh keypoints NOT aligned with video on mobile device
+
+## Release
+
+```
+npm run build:prod
+```
 
 ## Notes
 
@@ -52,7 +60,7 @@ jht2@Mac faceMesh % ls -la dist/bundle.js
 
 2026-04-02 01:17:50
 
-// ?v=15
+// ?v=16
   if (!my.showQRCode()) {
     // Position buttons at bottom of screen
     my.ui_container.style('position: fixed; z-index: 1999; bottom: 0; left: 0');

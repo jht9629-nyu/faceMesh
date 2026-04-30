@@ -1,9 +1,9 @@
 # [faceMesh](https://github.com/jht9629-nyu/faceMesh.git)
 
-- [entry ?v=19](src/index.html?v=19)
-- [entry s1 ?v=19](src/index.html?v=19&group=s1)
+- [entry ?v=20](src/index.html?v=20)
+- [entry s1 ?v=20](src/index.html?v=20&group=s1)
 
-- [entry qrcode?v=19](src/qrcode/index.html?v=19)
+- [entry qrcode?v=20](src/qrcode/index.html?v=20)
 
 ## Plan
 
@@ -35,6 +35,17 @@ npm run build:prod
 
 ```
 2026-04-30 08:57:33
+
+>> npm run preview
+does not reload page when files editted and saved
+>> use dev server
+
+npm run dev
+
+--
+
+npm run preview
+http://localhost:3000/src/index.html
 
 photo_list_update_pending
 add_action_stopLoader
@@ -81,7 +92,7 @@ jht2@Mac faceMesh % ls -la dist/bundle.js
 
 2026-04-02 01:17:50
 
-// ?v=19
+// ?v=20
   if (!my.showQRCode()) {
     // Position buttons at bottom of screen
     my.ui_container.style('position: fixed; z-index: 1999; bottom: 0; left: 0');

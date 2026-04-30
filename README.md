@@ -1,9 +1,9 @@
 # [faceMesh](https://github.com/jht9629-nyu/faceMesh.git)
 
-- [entry ?v=18](src/index.html?v=18)
-- [entry s1 ?v=18](src/index.html?v=18&group=s1)
+- [entry ?v=19](src/index.html?v=19)
+- [entry s1 ?v=19](src/index.html?v=19&group=s1)
 
-- [entry qrcode?v=18](src/qrcode/index.html?v=18)
+- [entry qrcode?v=19](src/qrcode/index.html?v=19)
 
 ## Plan
 
@@ -12,6 +12,10 @@
 - [] deep link to image and allow sharing
 
 ## ISSUES
+
+- [] npm run preview does not reload page on edit source
+- [] style.css tails to load in preview
+- [] photo take on s1 takes long time to stop initial spinner
 
 - [] later arriving device (eg. mobile) does not show recent capture
   on device until page reload on device
@@ -71,7 +75,7 @@ jht2@Mac faceMesh % ls -la dist/bundle.js
 
 2026-04-02 01:17:50
 
-// ?v=18
+// ?v=19
   if (!my.showQRCode()) {
     // Position buttons at bottom of screen
     my.ui_container.style('position: fixed; z-index: 1999; bottom: 0; left: 0');

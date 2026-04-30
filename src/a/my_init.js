@@ -111,15 +111,15 @@ window.addEventListener('resize', window_resized);
 function window_resized() {
   my.gallery_margin = '40px';
   let perRow = 4.4; // 6.1
-  my.thumbWidth = Math.floor(windowWidth) / perRow;
+  my.thumbWidth = Math.floor(window.innerWidth) / perRow;
   console.log('window_resized my.thumbWidth', my.thumbWidth);
   if (my.thumbWidth < 120) {
     perRow = 4.5;
-    my.thumbWidth = Math.floor(windowWidth) / perRow;
+    my.thumbWidth = Math.floor(window.innerWidth) / perRow;
     my.gallery_margin = '20px';
   }
   // my.gallery_margin = '0px';
-  console.log('window_resized windowWidth', windowWidth, 'my.thumbWidth', my.thumbWidth);
+  console.log('window_resized windowWidth', window.innerWidth, 'my.thumbWidth', my.thumbWidth);
 }
 
 window.my_init = my_init;

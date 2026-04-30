@@ -34,6 +34,12 @@ npm run build:prod
 ## Notes
 
 ```
+2026-04-30 16:22:14
+
+function window_resized
+    my.thumbWidth = Math.floor(windowWidth) / perRow;
+
+
 2026-04-30 08:57:33
 
 add_action_stopLoader

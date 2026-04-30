@@ -1017,7 +1017,7 @@
   }
 
   function hide_action_ui() {
-    console.log('hide_action_ui 2');
+    console.log('hide_action_ui');
     first_mesh_check();
     my.show_hide_taken = 1;
     // id_main.classList.add('hidden');
@@ -1502,7 +1502,7 @@
       img.elt.src = url;
     }
 
-    add_action_stopLoader();
+    // add_action_stopLoader();
 
     // Correct photo_list order
     if (!prepend) {
@@ -1558,6 +1558,8 @@
     } catch (err) {
       console.log('take_action err', err);
     }
+
+    add_action_stopLoader();
   }
 
   async function take_action$1() {

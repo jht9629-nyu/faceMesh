@@ -115,7 +115,7 @@ async function photo_list_render() {
     img.elt.src = url;
   }
 
-  add_action_stopLoader();
+  // add_action_stopLoader();
 
   // Correct photo_list order
   if (!prepend) {
@@ -171,6 +171,8 @@ async function add_action() {
   } catch (err) {
     console.log('take_action err', err);
   }
+
+  add_action_stopLoader();
 }
 
 async function take_action() {

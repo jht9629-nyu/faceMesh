@@ -35,6 +35,12 @@ npm run build:prod
 
 ```
 2026-04-30 08:57:33
+
+photo_list_update_pending
+add_action_stopLoader
+async function take_action() {
+  add_action_startLoader();
+
 first_mesh_check
 waiting_for_first_mesh
   if (my.faces.length > 0) {

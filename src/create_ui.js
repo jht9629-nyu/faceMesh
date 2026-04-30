@@ -171,6 +171,7 @@ function show_action_ui() {
 }
 
 function hide_action_ui() {
+  console.log('hide_action_ui');
   first_mesh_check();
   my.show_hide_taken = 1;
   // id_main.classList.add('hidden');

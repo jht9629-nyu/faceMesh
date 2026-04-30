@@ -1,12 +1,13 @@
 # [faceMesh](https://github.com/jht9629-nyu/faceMesh.git)
 
-- [entry ?v=16](src/index.html?v=16)
-- [entry s1 ?v=16](src/index.html?v=16&group=s1)
+- [entry ?v=18](src/index.html?v=18)
+- [entry s1 ?v=18](src/index.html?v=18&group=s1)
 
-- [entry qrcode?v=16](src/qrcode/index.html?v=16)
+- [entry qrcode?v=18](src/qrcode/index.html?v=18)
 
 ## Plan
 
+- [] don’t wait for gallery load on start up
 - [] Surface raw rgb values
 - [] deep link to image and allow sharing
 
@@ -29,6 +30,16 @@ npm run build:prod
 ## Notes
 
 ```
+2026-04-30 08:57:33
+first_mesh_check
+waiting_for_first_mesh
+  if (my.faces.length > 0) {
+    first_mesh_check();
+cd src
+npm run preview
+http://localhost:3000/src/index.html
+npm run build:prod
+
 2026-04-23 10:42:20
 Claude
 >> entry point for web app is src/index.html, convert to use rollup to bundle and import includes
@@ -60,7 +71,7 @@ jht2@Mac faceMesh % ls -la dist/bundle.js
 
 2026-04-02 01:17:50
 
-// ?v=16
+// ?v=18
   if (!my.showQRCode()) {
     // Position buttons at bottom of screen
     my.ui_container.style('position: fixed; z-index: 1999; bottom: 0; left: 0');

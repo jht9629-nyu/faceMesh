@@ -9,10 +9,10 @@ npm run build:prod
 
 quiet=--quiet
 
-VERSION=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+DATEVER=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
 
-echo "Release ?v=22 $VERSION" > src/release.txt
+echo "Release ?v=23 $DATEVER" > src/release.txt
 git add . 
-git commit $quiet -m "$VERSION"
+git commit $quiet -m "?v=23 $DATEVER"
 git push $quiet
 

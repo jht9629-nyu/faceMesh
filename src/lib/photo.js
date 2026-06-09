@@ -172,6 +172,9 @@ async function add_action() {
     console.log('take_action err', err);
   }
 
+  console.log('add_action exit');
+  jumpToTop_action_ui();
+
   add_action_stopLoader();
 }
 

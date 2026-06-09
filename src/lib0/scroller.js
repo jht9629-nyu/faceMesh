@@ -191,3 +191,4 @@ window.scroller_resume = scroller_resume;
 window.scroller_isActive = scroller_isActive;
 window.scroller_isStalled = scroller_isStalled;
 window.scrollerEnabled_toggle = scrollerEnabled_toggle;
+window.scroller_reset = scroller_reset;

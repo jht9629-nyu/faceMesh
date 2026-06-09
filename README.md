@@ -1,9 +1,9 @@
 # [faceMesh](https://github.com/jht9629-nyu/faceMesh.git)
 
-- [entry ?v=24](src/index.html?v=24)
-- [entry s1 ?v=24](src/index.html?v=24&group=s1)
+- [entry ?v=25](src/index.html?v=25)
+- [entry s1 ?v=25](src/index.html?v=25&group=s1)
 
-- [entry qrcode?v=24](src/qrcode/index.html?v=24)
+- [entry qrcode?v=25](src/qrcode/index.html?v=25)
 
 ## Plan
 
@@ -38,6 +38,12 @@ npm run build:prod
 ## Notes
 
 ```
+2026-06-09 17:59:24
+
+working in debug branch
+want to jump to top after image upload complete
+jumpToTop_action_ui
+
 2026-06-09 10:05:37
 
 what is path to dbase ?
@@ -114,7 +120,7 @@ jht2@Mac faceMesh % ls -la dist/bundle.js
 
 2026-04-02 01:17:50
 
-// ?v=24
+// ?v=25
   if (!my.showQRCode()) {
     // Position buttons at bottom of screen
     my.ui_container.style('position: fixed; z-index: 1999; bottom: 0; left: 0');

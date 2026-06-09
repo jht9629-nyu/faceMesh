@@ -31,9 +31,10 @@ function create_ui() {
   }
 
   my.scrollBtn = ui_createButton('Scroll');
-  my.scrollBtn.mousePressed(() => {
-    scrollerEnabled_toggle();
-  });
+  my.scrollBtn.mousePressed(scrollerEnabled_toggle);
+
+  my.jumpToTopBtn = ui_createButton('Top');
+  my.jumpToTopBtn.mousePressed(jumpToTop_action_ui);
 
   if (my.showButtons) {
     my.showAllBtn = ui_createButton('Show All');
@@ -72,6 +73,13 @@ function create_ui() {
   my.gallery_div.elt.style.fontSize = '0';
   my.gallery_div.elt.style.lineHeight = '0';
 }
+
+function jumpToTop_action_ui() {
+  console.log('jumpToTop_action_ui');
+  scroller_reset();
+  scroller_pause();
+}
+window.jumpToTop_action_ui = jumpToTop_action_ui;
 
 function load_action_ui() {
   console.log('load_action_ui', my.photo_list_update_enabled);

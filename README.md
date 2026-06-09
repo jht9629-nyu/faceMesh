@@ -14,7 +14,7 @@
 ## ISSUES
 
 - [] npm run preview does not reload page on edit source
-- [] style.css tails to load in preview
+- [] style.css fails to load in preview
 - [] photo take on s1 takes long time to stop initial spinner
 
 - [] later arriving device (eg. mobile) does not show recent capture
@@ -34,6 +34,14 @@ npm run build:prod
 ## Notes
 
 ```
+2026-06-09 10:05:37
+
+wath is path to dbase ?
+
+npm run dev
+http://localhost:3000/?group=s1
+
+
 2026-04-30 16:22:14
 
 npm run build:prod

@@ -25,6 +25,10 @@
 - https://github.com/ml5js/ml5-next-gen/issues/302
   - facemesh keypoints NOT aligned with video on mobile device
 
+# Log
+
+- beware checking in debug bundle !
+
 ## Release
 
 ```
@@ -36,7 +40,7 @@ npm run build:prod
 ```
 2026-06-09 10:05:37
 
-wath is path to dbase ?
+what is path to dbase ?
 
 npm run dev
 http://localhost:3000/?group=s1

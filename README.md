@@ -1,9 +1,9 @@
 # [faceMesh](https://github.com/jht9629-nyu/faceMesh.git)
 
-- [entry ?v=25](src/index.html?v=25)
-- [entry s1 ?v=25](src/index.html?v=25&group=s1)
+- [entry ?v=26](src/index.html?v=26)
+- [entry s1 ?v=26](src/index.html?v=26&group=s1)
 
-- [entry qrcode?v=25](src/qrcode/index.html?v=25)
+- [entry qrcode?v=26](src/qrcode/index.html?v=26)
 
 ## Plan
 
@@ -38,6 +38,19 @@ npm run build:prod
 ## Notes
 
 ```
+2026-06-11 10:26:52
+  my.bars = new eff_bars({ width: my.video.width, height: my.video.height });
+
+function overlayEyesMouthBars() {
+  my.bars.prepareOutput();
+
+  my.strokeWeightLips = my.strokeWeight;
+
+why isn't bar moving
+
+overlayEyesMouthBars
+overlayEyesMouth
+
 2026-06-09 17:59:24
 
 working in debug branch
@@ -120,7 +133,7 @@ jht2@Mac faceMesh % ls -la dist/bundle.js
 
 2026-04-02 01:17:50
 
-// ?v=25
+// ?v=26
   if (!my.showQRCode()) {
     // Position buttons at bottom of screen
     my.ui_container.style('position: fixed; z-index: 1999; bottom: 0; left: 0');

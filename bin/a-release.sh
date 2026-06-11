@@ -11,8 +11,8 @@ quiet=--quiet
 
 DATEVER=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
 
-echo "Release ?v=25 $DATEVER" > src/release.txt
+echo "Release ?v=26 $DATEVER" > src/release.txt
 git add . 
-git commit $quiet -m "?v=25 $DATEVER"
+git commit $quiet -m "?v=26 $DATEVER"
 git push $quiet
 

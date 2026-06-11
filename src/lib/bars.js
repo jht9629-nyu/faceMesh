@@ -14,6 +14,7 @@ class eff_bars {
     this.ylen = this.height;
     this.items = [];
     let n = this.nbars + 1;
+    // let n = this.nbars;
     this.wide = this.xlen * n;
     for (let i = 0; i < n; i++) {
       let xpos = this.xlen * i;
@@ -23,8 +24,8 @@ class eff_bars {
   }
   prepareOutput() {
     let deltaSecs = deltaTime / 1000;
-    this.xstep = (width * deltaSecs) / this.scrollSeconds;
-    // console.log('this.xstep', this.xstep);
+    this.xstep = (this.width * deltaSecs) / this.scrollSeconds;
+    // console.log('eff_bars xstep', this.xstep);
     let layer = this.output;
     layer.clear();
     for (let item of this.items) {
